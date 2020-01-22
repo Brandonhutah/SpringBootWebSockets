@@ -3,19 +3,18 @@
 <head>
     <title>WebSocket Chat Application </title>
     <link href="/bootstrap.min.css" rel="stylesheet">
-    <link href="/style.css" rel="stylesheet">
     <script src="/jquery-1.10.2.min.js"></script>
     <script src="/app.js"></script>
 </head>
 <body>
-<div class="container" id="main-content">
-    <div class="row">
+<div class="container">
+    <div class="row bg-success">
         <div class="col-md-8">
             <form class="form-inline">
-                <div class="form-group">
+                <div class="form-group my-2">
                     <label for="connect">Chat Application:</label>
-                    <button id="connect" type="button">Start New Chat</button>
-                    <button disabled="disabled" id="disconnect" type="button">End Chat
+                    <button id="connect" class="form-control mx-2" type="button">Start New Chat</button>
+                    <button disabled="disabled" class="form-control" id="disconnect" type="button">End Chat
                     </button>
                 </div>
             </form>
@@ -38,9 +37,9 @@
             <div class="col-md-6">
                 <form class="form-inline">
                     <div class="form-group">
-                        <textarea id="user" placeholder="Write your message here..." required></textarea>
+                        <textarea id="user" placeholder="Write your message here..." required class="form-control"></textarea>
                     </div>
-                    <button id="send" type="submit">Send</button>
+                    <button id="send" type="submit" class="form-control my-1">Send</button>
                 </form>
             </div>
         </div>
